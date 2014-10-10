@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{B5EA3FF9-C52A-ACBB-2EA3-0357C79CD4D1}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_4_5_4;UNITY_4_5;UNITY_WEBPLAYER;WEBPLUG;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;ENABLE_MONO;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;INCLUDE_WP_BLUE_SUPPORT;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>D:/Anwendungen/Programme/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>D:/Anwendungen/Programme/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Done\Done_Scripts\Done_BGScroller.cs" />
+     <Compile Include="Assets\Done\Done_Scripts\Done_DestroyByBoundary.cs" />
+     <Compile Include="Assets\Done\Done_Scripts\Done_DestroyByContact.cs" />
+     <Compile Include="Assets\Done\Done_Scripts\Done_DestroyByTime.cs" />
+     <Compile Include="Assets\Done\Done_Scripts\Done_EvasiveManeuver.cs" />
+     <Compile Include="Assets\Done\Done_Scripts\Done_GameController.cs" />
+     <Compile Include="Assets\Done\Done_Scripts\Done_Mover.cs" />
+     <Compile Include="Assets\Done\Done_Scripts\Done_PlayerController.cs" />
+     <Compile Include="Assets\Done\Done_Scripts\Done_RandomRotator.cs" />
+     <Compile Include="Assets\Done\Done_Scripts\Done_WeaponController.cs" />
+     <Compile Include="Assets\Scripts\DefuseBombs.cs" />
+     <Compile Include="Assets\Scripts\DestroyBombs.cs" />
+     <Compile Include="Assets\Scripts\DestroySpawn.cs" />
+     <Compile Include="Assets\Scripts\GameController.cs" />
+     <Compile Include="Assets\Scripts\Mover.cs" />
+     <Compile Include="Assets\Scripts\PlayerController.cs" />
+     <Compile Include="Assets\Scripts\RandomRotate.cs" />
+     <Compile Include="Assets\Scripts\RotateEngine.cs" />
+     <Compile Include="Assets\Scripts\packages\UEDS\UEDS\DefaultIOProvider.cs" />
+     <Compile Include="Assets\Scripts\packages\UEDS\UEDS\EditorSettingAttributeBase.cs" />
+     <Compile Include="Assets\Scripts\packages\UEDS\UEDS\IGlobalEditorSettingsIOProvider.cs" />
+     <Compile Include="Assets\Scripts\packages\UEDS\UEDS\Misc\Utils.cs" />
+     <Compile Include="Assets\Scripts\packages\UEDS\UEDS\PrimitveSerializers\ColorSerializer.cs" />
+     <Compile Include="Assets\Scripts\packages\UEDS\UEDS\PrimitveSerializers\Vector3Serializer.cs" />
+     <Compile Include="Assets\Scripts\packages\UEDS\UEDS\SerializedValue.cs" />
+     <Compile Include="Assets\Scripts\packages\UEDS\UEDS\Setting.cs" />
+     <Compile Include="Assets\Scripts\packages\UEDS\UEDS\Settings.cs" />
+     <Compile Include="Assets\Scripts\packages\UnityGameBase\_testing\audio\scripts\MultiChannelControllerUsage.cs" />
+     <Compile Include="Assets\Scripts\packages\UnityGameBase\_testing\scene_transition\scripts\SceneTransitionGameLogic.cs" />
+     <Compile Include="Assets\Scripts\packages\UnityGameBase\animation\scripts\CTransformSequence.cs" />
+     <Compile Include="Assets\Scripts\packages\UnityGameBase\audio\Channel.cs" />
+     <Compile Include="Assets\Scripts\packages\UnityGameBase\audio\ChannelInfo.cs" />
+     <Compile Include="Assets\Scripts\packages\UnityGameBase\audio\MultiChannelController.cs" />
+     <Compile Include="Assets\Scripts\packages\UnityGameBase\debug_helpers\scripts\debug\CDebugState.cs" />
+     <Compile Include="Assets\Scripts\packages\UnityGameBase\debug_helpers\scripts\debug\DebugEntry.cs" />
+     <Compile Include="Assets\Scripts\packages\UnityGameBase\debug_helpers\scripts\debug\EDebugEntryState.cs" />
+     <Compile Include="Assets\Scripts\packages\UnityGameBase\debug_helpers\scripts\debug\Logging\CLogCatcher.cs" />
+     <Compile Include="Assets\Scripts\packages\UnityGameBase\debug_helpers\scripts\debug\Logging\ELogLevel.cs" />
+     <Compile Include="Assets\Scripts\packages\UnityGameBase\debug_helpers\scripts\debug\Logging\ILogFormatter.cs" />
+     <Compile Include="Assets\Scripts\packages\UnityGameBase\debug_helpers\scripts\debug\Logging\ILogWriter.cs" />
+     <Compile Include="Assets\Scripts\packages\UnityGameBase\debug_helpers\scripts\debug\Logging\Logger.cs" />
+     <Compile Include="Assets\Scripts\packages\UnityGameBase\debug_helpers\scripts\debug\XLog.cs" />
+     <Compile Include="Assets\Scripts\packages\UnityGameBase\game_events\scripts\GameEvent.cs" />
+     <Compile Include="Assets\Scripts\packages\UnityGameBase\game_events\scripts\GameEventManager.cs" />
+     <Compile Include="Assets\Scripts\packages\UnityGameBase\game_events\scripts\SGameEventType.cs" />
+     <Compile Include="Assets\Scripts\packages\UnityGameBase\io\scripts\Metro\ASyncIO.cs" />
+     <Compile Include="Assets\Scripts\packages\UnityGameBase\io\scripts\Metro\Storage.cs" />
+     <Compile Include="Assets\Scripts\packages\UnityGameBase\io\scripts\Storage.cs" />
+     <Compile Include="Assets\Scripts\packages\UnityGameBase\io\scripts\WrappedIO.cs" />
+     <Compile Include="Assets\Scripts\packages\UnityGameBase\json_serialization\scripts\MiniJSON.cs" />
+     <Compile Include="Assets\Scripts\packages\UnityGameBase\object_pool\TestObjectPool.cs" />
+     <Compile Include="Assets\Scripts\packages\UnityGameBase\object_pool\UGBObjectPool.cs" />
+     <Compile Include="Assets\Scripts\packages\UnityGameBase\unity_base\scripts\CLoadingScene.cs" />
+     <Compile Include="Assets\Scripts\packages\UnityGameBase\unity_base\scripts\CLoadingSceneController.cs" />
+     <Compile Include="Assets\Scripts\packages\UnityGameBase\unity_base\scripts\Data\LocaData.cs" />
+     <Compile Include="Assets\Scripts\packages\UnityGameBase\unity_base\scripts\Data\Savegame\IIOProvider.cs" />
+     <Compile Include="Assets\Scripts\packages\UnityGameBase\unity_base\scripts\Data\Savegame\ISavegame.cs" />
+     <Compile Include="Assets\Scripts\packages\UnityGameBase\unity_base\scripts\Data\Savegame\Metadata.cs" />
+     <Compile Include="Assets\Scripts\packages\UnityGameBase\unity_base\scripts\Data\Savegame\Provider\XMLAsyncProvider.cs" />
+     <Compile Include="Assets\Scripts\packages\UnityGameBase\unity_base\scripts\Data\Savegame\Provider\XMLProvider.cs" />
+     <Compile Include="Assets\Scripts\packages\UnityGameBase\unity_base\scripts\Data\Savegame\SavegameBase.cs" />
+     <Compile Include="Assets\Scripts\packages\UnityGameBase\unity_base\scripts\Data\Savegame\SavegameController.cs" />
+     <Compile Include="Assets\Scripts\packages\UnityGameBase\unity_base\scripts\Data\Savegame\SavegameData.cs" />
+     <Compile Include="Assets\Scripts\packages\UnityGameBase\unity_base\scripts\Data\Savegame\XmlObjectSerializer.cs" />
+     <Compile Include="Assets\Scripts\packages\UnityGameBase\unity_base\scripts\Data\XmlLocaData.cs" />
+     <Compile Include="Assets\Scripts\packages\UnityGameBase\unity_base\scripts\Game\CLocalizableText.cs" />
+     <Compile Include="Assets\Scripts\packages\UnityGameBase\unity_base\scripts\Game\EGameMusicState.cs" />
+     <Compile Include="Assets\Scripts\packages\UnityGameBase\unity_base\scripts\Game\EGenericPlatform.cs" />
+     <Compile Include="Assets\Scripts\packages\UnityGameBase\unity_base\scripts\Game\FPSMeter.cs" />
+     <Compile Include="Assets\Scripts\packages\UnityGameBase\unity_base\scripts\Game\Game.cs" />
+     <Compile Include="Assets\Scripts\packages\UnityGameBase\unity_base\scripts\Game\GameComponent.cs" />
+     <Compile Include="Assets\Scripts\packages\UnityGameBase\unity_base\scripts\Game\GameData.cs" />
+     <Compile Include="Assets\Scripts\packages\UnityGameBase\unity_base\scripts\Game\GameLocalization.cs" />
+     <Compile Include="Assets\Scripts\packages\UnityGameBase\unity_base\scripts\Game\GameLogicImplementationBase.cs" />
+     <Compile Include="Assets\Scripts\packages\UnityGameBase\unity_base\scripts\Game\GameMusic.cs" />
+     <Compile Include="Assets\Scripts\packages\UnityGameBase\unity_base\scripts\Game\GameOptions.cs" />
+     <Compile Include="Assets\Scripts\packages\UnityGameBase\unity_base\scripts\Game\GamePause.cs" />
+     <Compile Include="Assets\Scripts\packages\UnityGameBase\unity_base\scripts\Game\GamePlayer.cs" />
+     <Compile Include="Assets\Scripts\packages\UnityGameBase\unity_base\scripts\Game\GameStateManager.cs" />
+     <Compile Include="Assets\Scripts\packages\UnityGameBase\unity_base\scripts\Game\IPlayerController.cs" />
+     <Compile Include="Assets\Scripts\packages\UnityGameBase\unity_base\scripts\Game\Input\CPinchGesture.cs" />
+     <Compile Include="Assets\Scripts\packages\UnityGameBase\unity_base\scripts\Game\Input\GameInput.cs" />
+     <Compile Include="Assets\Scripts\packages\UnityGameBase\unity_base\scripts\Game\Input\InputDelegates.cs" />
+     <Compile Include="Assets\Scripts\packages\UnityGameBase\unity_base\scripts\Game\Input\KeyMapping.cs" />
+     <Compile Include="Assets\Scripts\packages\UnityGameBase\unity_base\scripts\Game\Input\TouchDetection.cs" />
+     <Compile Include="Assets\Scripts\packages\UnityGameBase\unity_base\scripts\Game\Input\TouchInformation.cs" />
+     <Compile Include="Assets\Scripts\packages\UnityGameBase\unity_base\scripts\Game\LString.cs" />
+     <Compile Include="Assets\Scripts\packages\UnityGameBase\unity_base\scripts\Game\LazyUpdates.cs" />
+     <Compile Include="Assets\Scripts\packages\UnityGameBase\unity_base\scripts\Game\Licensing\ETargetStore.cs" />
+     <Compile Include="Assets\Scripts\packages\UnityGameBase\unity_base\scripts\Game\Licensing\GameLicense.cs" />
+     <Compile Include="Assets\Scripts\packages\UnityGameBase\unity_base\scripts\Game\Licensing\LicenseInformation.cs" />
+     <Compile Include="Assets\Scripts\packages\UnityGameBase\unity_base\scripts\Game\LogicDummy.cs" />
+     <Compile Include="Assets\Scripts\packages\UnityGameBase\unity_base\scripts\Game\SGameState.cs" />
+     <Compile Include="Assets\Scripts\packages\UnityGameBase\unity_base\scripts\Game\SLanguages.cs" />
+     <Compile Include="Assets\Scripts\packages\UnityGameBase\unity_base\scripts\Game\SMusicState.cs" />
+     <Compile Include="Assets\Scripts\packages\UnityGameBase\unity_base\scripts\Game\SPlayerState.cs" />
+     <Compile Include="Assets\Scripts\packages\UnityGameBase\unity_base\scripts\Game\SceneTransition.cs" />
+     <Compile Include="Assets\Scripts\packages\UnityGameBase\unity_base\scripts\ILoadingScreenController.cs" />
+     <Compile Include="Assets\Scripts\packages\UnityGameBase\unity_base\scripts\Utils\GenericStateMachine.cs" />
+     <Compile Include="Assets\Scripts\packages\UnityGameBase\unity_base\scripts\Utils\Helpers.cs" />
+     <Compile Include="Assets\Scripts\packages\UnityGameBase\unity_base\scripts\Utils\StopWatch.cs" />
+     <Compile Include="Assets\Scripts\packages\UnityGameBase\unity_base\scripts\Utils\ThreadingBridge.cs" />
+     <Compile Include="Assets\Scripts\packages\UnityGameBase\unity_base\scripts\Utils\ThreadingHelper.cs" />
+     <Compile Include="Assets\Scripts\packages\UnityGameBase\unity_base\scripts\Utils\UIHelpers.cs" />
+     <Compile Include="Assets\Scripts\packages\UnityGameBase\unity_base\scripts\Utils\UnityGameBaseVersion.cs" />
+     <Compile Include="Assets\Scripts\packages\WSAExtensions\UEDS\AsyncIOProvider.cs" />
+ <Reference Include="UGBTemplates">
+ <HintPath>C:/Users/Malice/Desktop/Trial Project/Assets/Scripts/packages/UnityGameBase/UGBSetup/mdTemplates/UGBTemplates.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
