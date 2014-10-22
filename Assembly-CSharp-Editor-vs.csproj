@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{05A5F665-9323-AA7B-5CE0-EA689B9613FB}</ProjectGuid>
+	<ProjectGuid>{7B9A6B02-83A6-A0F8-E55B-C85B4E68BECA}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -78,7 +78,7 @@
      <Compile Include="Assets\Scripts\packages\UnityGameBase\unity_base\scripts\Editor\MakePrefab.cs" />
      <Compile Include="Assets\Scripts\packages\UnityGameBase\unity_base\scripts\Editor\UnityGameBaseVersionMenu.cs" />
  <Reference Include="UGBTemplates">
- <HintPath>C:/Users/Malice/Desktop/Trial Project/Assets/Scripts/packages/UnityGameBase/UGBSetup/mdTemplates/UGBTemplates.dll</HintPath>
+ <HintPath>C:/Users/Malice/Desktop/Trial-Project/Assets/Scripts/packages/UnityGameBase/UGBSetup/mdTemplates/UGBTemplates.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Graphs">
  <HintPath>D:/Anwendungen/Programme/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
@@ -86,7 +86,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-vs.csproj">
-      <Project>{B5EA3FF9-C52A-ACBB-2EA3-0357C79CD4D1}</Project>      <Name>Assembly-CSharp-vs</Name>    </ProjectReference>
+      <Project>{1BC49148-4474-A32B-8860-513AAD3ABA8C}</Project>      <Name>Assembly-CSharp-vs</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

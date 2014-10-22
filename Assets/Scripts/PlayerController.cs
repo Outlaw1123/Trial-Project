@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
 	public float speed;
 	public float tilt;
 	public Boundary boundary;
+	public int life;
 	
 	public GameObject shot;
 	public Transform shotSpawn;
@@ -22,23 +23,33 @@ public class PlayerController : MonoBehaviour
 	public Vector3 radius = new Vector3(0,0,0);
 	public float currentRotation = 0.0f;
 
+	public GUIText lifeText;
+
 	void Update ()
 	{
 		if (Input.GetButton("Fire1") && Time.time > nextFire)
 		{
 			nextFire = Time.time + fireRate;
 			Instantiate(shot, shotSpawn.position, shotSpawn.rotation);
-			//audio.Play ();
+			audio.Play ();
 		}
+		lifeText.text = "Remaining Lives: " + life;
 	}
-		
 
 	void FixedUpdate ()
 	{
+		//rigidbody.rotation = Quaternion.Euler (0.0f, 0.0f, rigidbody.velocity.x * -tilt);
 		currentRotation += Input.GetAxis ("Horizontal")*Time.deltaTime*-100;
 		rotation.eulerAngles = new Vector3(0, currentRotation, -9);
 		transform.position = rotation * radius;
 		transform.rotation = rotation;
+	}
+
+	public int DecreaseLife ()
+	{
+		life--;
+		lifeText.text = "Remaining Lives: " + life;
+		return life;
 	}
 }
 

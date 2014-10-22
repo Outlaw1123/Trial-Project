@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{B5EA3FF9-C52A-ACBB-2EA3-0357C79CD4D1}</ProjectGuid>
+	<ProjectGuid>{1BC49148-4474-A32B-8860-513AAD3ABA8C}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -57,8 +57,10 @@
      <Compile Include="Assets\Done\Done_Scripts\Done_RandomRotator.cs" />
      <Compile Include="Assets\Done\Done_Scripts\Done_WeaponController.cs" />
      <Compile Include="Assets\Scripts\DefuseBombs.cs" />
-     <Compile Include="Assets\Scripts\DestroyBombs.cs" />
+     <Compile Include="Assets\Scripts\DestroyByContact.cs" />
+     <Compile Include="Assets\Scripts\DestroyByTime.cs" />
      <Compile Include="Assets\Scripts\DestroySpawn.cs" />
+     <Compile Include="Assets\Scripts\EnemyController.cs" />
      <Compile Include="Assets\Scripts\GameController.cs" />
      <Compile Include="Assets\Scripts\Mover.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
@@ -153,7 +155,7 @@
      <Compile Include="Assets\Scripts\packages\UnityGameBase\unity_base\scripts\Utils\UnityGameBaseVersion.cs" />
      <Compile Include="Assets\Scripts\packages\WSAExtensions\UEDS\AsyncIOProvider.cs" />
  <Reference Include="UGBTemplates">
- <HintPath>C:/Users/Malice/Desktop/Trial Project/Assets/Scripts/packages/UnityGameBase/UGBSetup/mdTemplates/UGBTemplates.dll</HintPath>
+ <HintPath>C:/Users/Malice/Desktop/Trial-Project/Assets/Scripts/packages/UnityGameBase/UGBSetup/mdTemplates/UGBTemplates.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

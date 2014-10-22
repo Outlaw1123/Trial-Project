@@ -5,7 +5,7 @@ public class DestroySpawn : MonoBehaviour
 {
 	void OnTriggerEnter(Collider other) 
 	{
-		if (other.tag == "Player")
+		if (other.tag == "Enemy")
 		{
 			return;
 		}
